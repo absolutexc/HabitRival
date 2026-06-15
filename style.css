@@ -1,0 +1,533 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    color: #6048A1;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+/* ФИОЛЕТОВЫЙ ФОН для первой и последней секции */
+.purple-section {
+    background: linear-gradient(135deg, #6048A1 0%, #7B68C7 50%, #4A3680 100%);
+    color: white;
+}
+
+.purple-section h1,
+.purple-section h2,
+.purple-section .hero-description {
+    color: white;
+}
+
+/* BUTTONS */
+.btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 28px;
+    border-radius: 60px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    background: #1F3E3E;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1.5px solid white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #6048A1;
+}
+
+/* HEADER - БЕЛЫЙ ФОН */
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+}
+
+.logo-dark {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    font-family: "Montserrat", sans-serif;
+    color: #6048A1;
+}
+
+.nav-links-dark {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.nav-links-dark a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #6048A1;
+    transition: color 0.2s;
+}
+
+.nav-links-dark a:hover {
+    color: #F3A261;
+}
+
+.mobile-menu-btn-dark {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #6048A1;
+}
+
+.header-buttons{
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.header-buttons img {
+    height: auto;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.header-buttons img:hover {
+    transform: scale(1.02);
+}
+
+/* HERO SECTION */
+.hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1.2;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    max-width: 550px;
+    margin-bottom: 24px;
+}
+
+.hero-badge {
+    flex: 0.8;
+    text-align: center;
+}
+
+.hero-badge img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 32px;
+}
+
+/* ВТОРАЯ СЕКЦИЯ — как на макете */
+.features-section {
+    background-color: #ffffff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 24px;
+}
+
+/* Блок с телефонами (левая колонка) */
+.phones-showcase {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.phone-img {
+    max-width: 260px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 32px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.phone-img:hover {
+    transform: translateY(-8px);
+}
+
+/* Карточки функций (правая колонка) */
+.features-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-card {
+    background: white;
+    padding: 24px 20px;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s;
+    text-align: center;
+    border: 1px solid #e9d5ff;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #6048A1;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.45;
+    font-size: 0.9rem;
+}
+
+/* FAQ ACCORDION */
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 24px;
+    margin-bottom: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    border: 1px solid #EDE7DB;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 20px 28px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: inherit;
+    color: #1A2C2E;
+}
+
+.faq-question span:first-child {
+    flex: 1;
+    padding-right: 16px;
+}
+
+.faq-icon {
+    font-size: 1.6rem;
+    font-weight: 400;
+    transition: transform 0.2s;
+}
+
+.faq-answer {
+    max-height: 0;
+    padding: 0 28px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.2s;
+    background-color: #FEFAF2;
+    border-top: 1px solid transparent;
+    color: #2E4A4A;
+    line-height: 1.5;
+}
+
+.faq-answer p {
+    padding-bottom: 24px;
+    padding-top: 8px;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 320px;
+    border-top-color: #E9E0D2;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #6048A1 0%, #7B68C7 100%);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(96, 72, 161, 0.3);
+    transition: all 0.3s ease;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background: linear-gradient(135deg, #F3A261 0%, #FF8C42 100%);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(243, 162, 97, 0.4);
+}
+
+.scroll-to-top:active {
+    transform: translateY(0px);
+}
+
+/* Адаптив для мобильных */
+@media (max-width: 768px) {
+    .scroll-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+}
+
+/* FOOTER (фиолетовый) */
+.footer {
+    background: linear-gradient(135deg, #6048A1 0%, #7B68C7 50%, #4A3680 100%);
+    color: white;
+    padding: 56px 0 32px;
+    margin-top: 20px;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+    margin-bottom: 48px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-col h4 {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #f0e6ff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #F3A261;
+}
+
+.footer-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+.footer-buttons img {
+    max-width: 160px;
+    height: auto;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.footer-buttons img:hover {
+    transform: scale(1.02);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    
+    .features-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        padding: 0 24px;
+    }
+    
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    /* Мобильное меню для белой шапки */
+    .nav-links-dark {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        padding: 24px;
+        border-radius: 24px;
+        gap: 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .nav-links-dark.show {
+        display: flex;
+    }
+    
+    .mobile-menu-btn-dark {
+        display: block;
+    }
+    
+    .footer-grid {
+        flex-direction: column;
+    }
+    
+    .hero-wrapper {
+        flex-direction: column;
+    }
+    
+    .hero-badge {
+        width: 100%;
+    }
+    
+    .features-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .phones-showcase {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 801px) {
+    .nav-links-dark {
+        display: flex !important;
+    }
+}

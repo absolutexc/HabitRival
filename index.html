@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>HabitRival — Привычки с вызовом</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png" type="image/png">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <a href="/" onclick="window.location.reload(); return false;" class="logo-dark">HabitRival</a>
+                <button class="mobile-menu-btn-dark" id="menuToggle" aria-label="Меню">☰</button>
+                <div class="nav-links-dark" id="navLinks">
+                    <a href="#home">Домой</a>
+                    <a href="#features">Функции</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#footer">Контакты</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section purple-section">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <h1>Habit Rival</h1>
+                        <p class="hero-description">
+                            Приложение для отслеживания привычек с соревновательным элементом. Отмечай выполнение, следи
+                            за прогрессом друзей, участвуй в челленджах.
+                        </p>
+                        <div class="btn-group header-buttons">
+                            <a target="_blank" href="https://google.com/"><img src="images/googleplay.png"
+                                    alt="Google Play" style="height: 60px;"></a>
+                            <a target="_blank" href="https://www.rustore.ru/"><img src="images/rustore.png"
+                                    alt="RuStore" style="height: 60px;"></a>
+                        </div>
+                    </div>
+                    <div class="hero-badge">
+                        <img src="images/logo.png" alt="HabitRival Logo" style="max-width: 280px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section features-section">
+            <div class="container">
+                <h2>Как работает приложение?</h2>
+                <div class="features-grid">
+                    <div class="phones-showcase">
+                        <img src="images/телефон.png" alt="Экран приложения" class="phone-img">
+                        <img src="images/телефон2.png" alt="Экран привычек" class="phone-img">
+                    </div>
+
+                    <div class="features-cards">
+                        <div class="feature-card">
+                            <img src="images/man.png" alt="" class="feature-icon">
+                            <h3>Твои привычки — твои правила</h3>
+                            <p>Создавай кастомные привычки, настраивай пуш-уведомления и отслеживай прогресс прямо с
+                                главного экрана.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="images/fire.png" alt="" class="feature-icon">
+                            <h3>Стрики и очки</h3>
+                            <p>Выполняй все привычки каждый день — получай очки. Поддерживай серию и расти мотивацию.
+                            </p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="images/twoman.png" alt="" class="feature-icon">
+                            <h3>Социальные функции</h3>
+                            <p>Добавляй друзей, отслеживай их активность в ленте и устраивай совместные челленджи.</p>
+                        </div>
+                        <div class="feature-card">
+                            <img src="images/shop.png" alt="" class="feature-icon">
+                            <h3>Магазин наград</h3>
+                            <p>Трать накопленные очки на бонусы и приятные плюшки внутри приложения.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="section">
+            <div class="container">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>На каких устройствах работает приложение?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>HabitRival работает на устройствах с Android 10 и выше. iOS версия в разработке — следите
+                                за новостями!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Нужен ли интернет для работы?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Базовое отслеживание привычек работает офлайн, но для соревнований, друзей и челленджей
+                                требуется подключение к интернету.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Как зарегистрироваться в приложении?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>После установки нажмите «Создать аккаунт» — можно по email или через Google. Займёт
+                                меньше минуты.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Как настроить напоминания?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>В карточке привычки нажмите на колокольчик и выберите время — приложение пришлет
+                                пуш-уведомление.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Сколько привычек можно создать?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ограничений нет! Создавайте сколько угодно, но для максимальной эффективности рекомендуем
+                                начать с 3–5 ключевых.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Что такое стрик?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Стрик — это непрерывная серия выполнения привычки. Чем длиннее стрик, тем больше очков и
+                                мотивации вы получаете.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Можно ли редактировать или удалять привычки?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Да, в любой момент вы можете отредактировать название, частоту или удалить привычку
+                                свайпом влево в главном списке.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Как найти друзей в приложении?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Через поиск по username, QR-коду или синхронизируйте контакты — добавьте друзей и следите
+                                за их прогрессом.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Что такое челленджи?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Это совместные соревнования с друзьями. Кто дольше продержит стрик или наберёт больше
+                                очков за неделю — выигрывает особые значки.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Что такое лента активности?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Лента показывает последние успехи друзей: кто выполнил привычку, кто получил новый рекорд
+                                — мотивирует не сдаваться.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Как получить очки?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Очки начисляются за каждое выполнение привычки, поддержание стриков и победы в
+                                челленджах. Чем стабильнее вы, тем больше!</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Что можно купить в магазине?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Темы оформления, уникальные иконки привычек, фоновые эффекты и бустеры для получения
+                                дополнительных очков.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Приложение платное?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>HabitRival полностью бесплатен. Внутри есть магазин, но все основные функции абсолютно
+                                бесплатны, никаких подписок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>HabitRival</h4>
+                    <p style="margin-bottom: 16px;">Доступно сейчас<br>Скачивайте HabitRival!</p>
+                    <div class="btn-group footer-buttons">
+                        <img src="images/googleplay.png" alt="Google Play">
+                        <img src="images/rustore.png" alt="RuStore">
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Связь с нами</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://google.com">Telegram</a></li>
+                        <li><a href="https://google.com">Support</a></li>
+                        <li><a href="https://google.com">Почта: habitrival@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Приложение</h4>
+                    <ul class="footer-links">
+                        <li><a href="files/HabitRival.apk" download="HabitRival.apk">Скачать APK</a></li>
+                        <li><a href="https://google.com">Политика конфиденциальности</a></li>
+                        <li><a href="https://google.com">Пользовательское соглашение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>HabitRival 2026 © Все права защищены</span>
+                <span>Соревнуйся с друзьями, меняй привычки</span>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Наверх">
+        ↑
+    </button>
+</body>
+
+</html>
